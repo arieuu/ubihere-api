@@ -40,8 +40,9 @@ class User(auth_models.AbstractUser):
     name = models.CharField(max_length=255)
     email = models.EmailField(max_length=255, unique=True)
     password = models.CharField(max_length=255)
+    username = None
 
     objects = UserManager()
-
+  
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["name"]
