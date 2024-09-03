@@ -9,7 +9,7 @@ class Project(models.Model):
     owner_email = models.EmailField(max_length=255, null=False)
     total_ratings = models.IntegerField(default=0)
     number_of_responses = models.IntegerField(default=0)
-    calculated_rating = models.IntegerField(default=0)
+    calculated_rating = models.IntegerField(default=0, null=True)
 
     @property
     def calculate_rating(self):
