@@ -3,6 +3,6 @@ from .serializers import ProjectSerializer
 from .models import Project
 
 
-class ProjectListCreateAPI(generics.ListCreateAPIView):
+class ProjectListCreateAPIView(generics.ListCreateAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer

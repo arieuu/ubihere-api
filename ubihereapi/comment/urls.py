@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.ProjectListCreateAPIView.as_view())
+    path("", views.CommentListCreateAPIView.as_view())
 ]
