@@ -14,4 +14,7 @@ class ProjectSerializer(serializers.ModelSerializer):
             "about",
             "image",
             "owner_email",
+            "total_ratings",
+            "calculated_rating",
+            "number_of_responses"
         ]
