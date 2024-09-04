@@ -12,6 +12,6 @@ class UserListCreateAPIView(generics.ListCreateAPIView):
 
 # Update Delete
 
-class UserRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+class UserRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
