@@ -3,3 +3,4 @@ venv
 ubihereapi/db.sqlite3
 ubihereapi/*.sqlite3
 ubihereapi/db.sqlite3
+mediafiles

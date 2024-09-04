@@ -4,6 +4,8 @@ from .models import Project
 
 class ProjectSerializer(serializers.ModelSerializer):
 
+    image = serializers.ImageField(required=False)
+
     class Meta:
         model = Project
         fields = [

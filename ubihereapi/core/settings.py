@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import datetime
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -154,5 +155,14 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": datetime.timedelta(days=1),
     "REFRESH_TOKEN_LIFETIME": datetime.timedelta(days=1)
 }
+
+
+# Actual directory for files to go
+
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "mediafiles")
+
+# URL used to access the media
+
+MEDIA_URL = "/media/"
 
 
